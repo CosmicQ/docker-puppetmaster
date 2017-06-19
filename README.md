@@ -2,10 +2,9 @@
 A simple puppetmaster to get started
 
 This is mostly taken from [puppet/puppetserver-standalone](https://hub.docker.com/r/puppet/puppetserver-standalone/).  
-I changed the base image from Ubuntu to Phusion and enabled ssh.  
+I changed the base image from Ubuntu to Phusion and enabled ssh access.  
 I wanted to be able to connect to the puppetmaster and run 
 '''puppet module install''' commands.
-
 
 # How to run
 
@@ -33,4 +32,4 @@ Find the IP address the container is running as.  Usually something like 172.16.
 ssh root@172.16.0.2
 ```
 
-This will allow you in the container and let you perform actions.
+This will allow you in the container and let you perform server actions.
