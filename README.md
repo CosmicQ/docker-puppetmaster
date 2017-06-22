@@ -31,10 +31,6 @@ Here is a sample command using all the options.
     --hostname puppetmaster.cosmicegg.net \
     cosmicq/docker-puppetserver
 
-Ssh in and manage your server
-
-    ssh root@172.16.0.2
-
 # SSH
 
 Make sure you have run ssh-keygen and have an authorized_keys files in your home directory
@@ -44,7 +40,13 @@ Make sure you have run ssh-keygen and have an authorized_keys files in your home
     cd ~/.ssh
     cat id_dsa.pub > authorized_keys
 
+Ssh in and manage your server
+
+    ssh root@172.16.0.2
+
 # Puppet subdirectories
+
+You might find it best to mount an NFS volume (or other shared storage) under /srv/puppet. This allows you to move your puppet container to other servers and persist data.
 
 ## /srv/puppet/code
 
