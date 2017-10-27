@@ -60,7 +60,7 @@ EXPOSE 8140
 
 VOLUME [ \
 	"/etc/puppetlabs/code/", \
-	"/etc/puppetlabs/puppet/ssl/", \
+	"/etc/puppetlabs/puppet/", \
 	"/opt/puppetlabs/server/data/puppetserver/", \
 	"/root/.ssh" \
 ]
