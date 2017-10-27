@@ -24,7 +24,7 @@ Here is a sample command using all the options.
 
     docker run -d --restart=always -p 8140:8140 \
     -v /srv/puppet/code:/etc/puppetlabs/code \
-    -v /srv/puppet/puppet:/etc/puppetlabs/puppet/puppet \
+    -v /srv/puppet/puppet:/etc/puppetlabs/puppet \
     -v /srv/puppet/server:/opt/puppetlabs/server/data/puppetserver \
     -v /home/cosmicq/.ssh:/root/.ssh \
     --name puppet \
