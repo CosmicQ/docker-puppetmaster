@@ -54,15 +54,14 @@ COPY logback.xml /etc/puppetlabs/puppetserver/
 COPY request-logging.xml /etc/puppetlabs/puppetserver/
 COPY Dockerfile /
 
-ADD start_puppetserver.sh /etc/service/puppetserver/run
+COPY start_puppetserver.sh /etc/service/puppetserver/run
 
 EXPOSE 8140
 
 VOLUME [ \
 	"/etc/puppetlabs/code/", \
 	"/etc/puppetlabs/puppet/", \
-	"/opt/puppetlabs/server/data/puppetserver/", \
-	"/root/.ssh" \
+	"/opt/puppetlabs/server/data/puppetserver/" \
 ]
 
 # Use baseimage-docker's init system.
